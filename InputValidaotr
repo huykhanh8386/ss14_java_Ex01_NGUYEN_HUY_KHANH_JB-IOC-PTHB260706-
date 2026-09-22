@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class InputValidaotr {
+    public static int inputValidInterger(Scanner scanner, String prompt){
+        while (true){
+            System.out.println(prompt);
+            try {
+                String input = scanner.nextLine();
+                return Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e){
+                System.out.println("Lỗi: Bạn phải nhập lại 1 số nguyên hợp lệ! Vui lòng nhập  lại");
+            }
+        }
+    }
+
+}
